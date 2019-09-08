@@ -1,0 +1,10 @@
+2019-09-08 15:31:27,052 - INFO - testing
+2019-09-08 15:31:27,082 - INFO - Starting new HTTPS connection (1): jsonplaceholder.typicode.com
+2019-09-08 16:38:46,060 - INFO - testing
+2019-09-08 16:38:46,091 - INFO - Starting new HTTPS connection (1): jsonplaceholder.typicode.com
+2019-09-08 16:38:46,300 - INFO - testing safe
+2019-09-08 16:38:46,309 - INFO - Starting new HTTPS connection (1): jsonplaceholder.typicode.com
+2019-09-08 16:49:36,140 - INFO - testing
+2019-09-08 16:49:36,171 - INFO - Starting new HTTPS connection (1): jsonplaceholder.typicode.com
+2019-09-08 16:49:36,554 - INFO - testing safe
+2019-09-08 16:49:36,564 - INFO - Starting new HTTPS connection (1): jsonplaceholder.typicode.com
