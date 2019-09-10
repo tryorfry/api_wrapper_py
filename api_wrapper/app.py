@@ -1,27 +1,18 @@
-from http_client import HTTPClient
+from api.http_client import HTTPClient
 import utils
 from pprint import pprint
-from models.safe import Safe
-
-logger = utils.logger()
-def get_test():
-    http = HTTPClient(ssl_verify=True)
-    logger.info('testing')
-    res = http.get('https://jsonplaceholder.typicode.com/posts')
-    #pprint(res)
-
-def get_safes():
-    logger.info('testing safe')
-    safe = Safe()
-    
-    res = safe.get_safes()
-    pprint(res)
-    
+from api.safe import Safe
 
 
 if __name__ == '__main__':
-    get_test()
-    get_safes()
+    logger = utils.logger()
+    safe = Safe()
+    s = safe.get_safes()
+    pprint(s)
+    created = safe.post_safes()
+    pprint(created, indent=8)
+
+
 
 
 

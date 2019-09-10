@@ -17,8 +17,5 @@ def load_conf(conf_file=constants.CONF_FILE):
 def logger(log_file=constants.LOG_FILE, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s'):
     logging.basicConfig(filename=log_file, level=level, format=format)
     return logging
-    
 
-        
-    
 

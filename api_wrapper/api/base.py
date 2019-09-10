@@ -1,13 +1,13 @@
-from http_client import HTTPClient
 import utils
+from api.http_client import HTTPClient
 
 class Base(object):
-    """Abstract base class for handling the cyberark api"""
+    """Abstract base class for handling api"""
 
     def __init__(self):
-        self.http = HTTPClient()
-        self.conf = utils.load_conf()
+        self.conf = utils.load_conf()        
         self.logger = utils.logger()
+        self.http = HTTPClient()
 
 
     def __str__(self):
@@ -16,8 +16,3 @@ class Base(object):
         return "\n".join(
             ['{key}={value}'.format(key=key, value=value) for key,value in self.__dict__.items()]
         )
-        
-
-    
-    
-    
